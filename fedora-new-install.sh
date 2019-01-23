@@ -60,10 +60,43 @@ echo "Installing Category Games"
 echo "Installing Category Graphics"
 
 sudo dnf -y install gimp
-
+sudo dnf -y install gpick
+sudo dnf -y install inkscape
+sudo dnf -y install ristretto
 
 echo "Installing Cagegory Internet"
 
 sudo dnf -y install firefox
 sudo dnf -y install vivaldi-stable
+sudo dnf -y install telegram-desktop
+sudo dnf -y install hexchat
+sudo dnf -y install qbittorrent
 
+echo "Installing Multimedia"
+
+sudo dnf -y install pragha
+sudo dnf -y install vlc
+
+echo "Installing Office"
+
+sudo dnf -y install evince
+sudo dnf -y install libreoffice
+
+echo "Installing System"
+
+sudo dnf -y install baobab
+sudo dnf -y install dconf-editor
+sudo dnf -y install ffmpegthumbnailer
+sudo dnf -y install glances
+sudo dnf -y install grsync
+sudo dnf -y install hddtemp
+sudo dnf -y install htop
+sudo dnf -y install i-nex
+sudo dnf -y install lm_sensors
+sudo dnf -y install numlockx
+sudo dnf -y install neofetch
+sudo dnf -y install screenfetch
+sudo dnf -y install simple-scan
+sudo dnf -y install sysstat
+sudo dnf -y install vnstat
+sudo dnf -y install unclutter
