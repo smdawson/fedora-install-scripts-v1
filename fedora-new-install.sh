@@ -108,6 +108,10 @@ sudo dnf -y install sysstat
 sudo dnf -y install vnstat
 sudo dnf -y install unclutter
 
+echo "Install zip and unzip packages"
+
+sudo dnf -y install unace unrar sharutils uudeview arj cabextract file-roller
+
 echo "###################################################"
 echo "#####                                         #####"
 echo "#####          Installation Complete          #####"
