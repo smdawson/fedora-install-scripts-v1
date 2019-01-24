@@ -32,6 +32,12 @@ echo "Installing Command Line Packages"
 sudo dnf -y install git
 sudo dnf -y install flatpak
 
+echo "Sound"
+
+sudo dnf -y install gstreamer
+sudo dnf -y install gstreamer-plugins-good gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-plugins-base
+sudo dnf -y install volumeicon
+
 echo "Installing Additional Panel Packages"
 
 sudo dnf -y install xfce4-whiskermenu-plugin
