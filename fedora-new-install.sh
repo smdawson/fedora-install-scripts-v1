@@ -95,6 +95,7 @@ sudo dnf -y install i-nex
 sudo dnf -y install lm_sensors
 sudo dnf -y install numlockx
 sudo dnf -y install neofetch
+sudo dnf -y install samba
 sudo dnf -y install screenfetch
 sudo dnf -y install simple-scan
 sudo dnf -y install sysstat
