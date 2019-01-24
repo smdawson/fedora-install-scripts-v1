@@ -29,7 +29,7 @@ sudo dnf -y --refresh upgrade
 
 echo "Installing Command Line Packages"
 
-sudo dnf -y install github
+sudo dnf -y install git
 sudo dnf -y install flatpak
 
 echo "Installing Additional Panel Packages"
@@ -100,3 +100,9 @@ sudo dnf -y install simple-scan
 sudo dnf -y install sysstat
 sudo dnf -y install vnstat
 sudo dnf -y install unclutter
+
+echo "###################################################"
+echo "#####                                         #####"
+echo "#####          Installation Complete          #####"
+echo "#####                                         #####"
+echo "###################################################"
