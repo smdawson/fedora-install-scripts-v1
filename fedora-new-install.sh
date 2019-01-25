@@ -48,6 +48,7 @@ sudo dnf -y install catfish-python3
 sudo dnf -y install cmatrix
 sudo dnf -y install redshift
 sudo dnf -y install xfburn
+sudo dnf -y install xfce4-notes-plugin
 
 echo "Installing Category Administration"
 
