@@ -49,6 +49,7 @@ sudo dnf -y install cmatrix
 sudo dnf -y install redshift
 sudo dnf -y install xfburn
 sudo dnf -y install xfce4-notes-plugin
+sudo dnf -y install conky conky-mamager jq
 
 echo "Installing Category Administration"
 
