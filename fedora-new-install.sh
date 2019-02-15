@@ -89,6 +89,7 @@ echo "Installing Office"
 
 sudo dnf -y install evince
 sudo dnf -y install libreoffice
+sudo dnf -y install thunderbird
 
 echo "Installing System"
 
