@@ -112,6 +112,8 @@ sudo dnf -y install simple-scan
 sudo dnf -y install sysstat
 sudo dnf -y install vnstat
 sudo dnf -y install unclutter
+sudo dnf -y xscreensaver xscreensaver-extras xscreensaver-extras-base xscreensaver-gl-base 
+sudo dnf -y rss-glx-xscreensaver qstars-xscreensaver tempest-xscreensaver
 
 echo "Install zip and unzip packages"
 
