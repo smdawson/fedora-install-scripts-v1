@@ -45,11 +45,12 @@ sudo dnf -y install xfce4-whiskermenu-plugin
 echo "Installing Category Accessories"
 
 sudo dnf -y install catfish-python3
+sudo dnf -y install conky conky-mamager jq
 sudo dnf -y install cmatrix
 sudo dnf -y install redshift
 sudo dnf -y install xfburn
 sudo dnf -y install xfce4-notes-plugin
-sudo dnf -y install conky conky-mamager jq
+sudo dnf -y install lightdm-settings
 sudo dnf -y install seahorse
 
 echo "Installing Category Administration"
