@@ -14,14 +14,17 @@ set -e
 
 # echo "Adding Additional Repositories"
 
-# su -c 'dnf install http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm'
+su -c 'dnf install http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm'
 # sudo dnf config-manager --add-repo https://repo.vivaldi.com/archive/vivaldi-fedora.repo
+sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
+sudo dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
+
 
 # Add XFCE4 GUI
-# echo "Add XFCE"
-# sudo dnf -y group install "Xfce Desktop"
-# echo "exec /usr/bin/xfce4-session" >> ~/.xinitrc
-# su -c systemctl set-default graphical.target
+echo "Add XFCE"
+sudo dnf -y group install "Xfce Desktop"
+echo "exec /usr/bin/xfce4-session" >> ~/.xinitrc
+su -c systemctl set-default graphical.target
 
 echo "Update"
 
@@ -31,6 +34,11 @@ echo "Installing Command Line Packages"
 
 sudo dnf -y install git
 sudo dnf -y install flatpak
+
+echo "Installing Software used in .bashrc"
+
+sudo dnf -y install youtube-dl
+sudo dnf -y install hwinfo
 
 echo "Sound"
 
@@ -61,6 +69,7 @@ echo "installing Category Development"
 
 sudo dnf -y install geany
 sudo dnf -y install meld
+sudo dnf -y install sublime-text
 
 echo "Installing Category Games"
 
@@ -92,6 +101,12 @@ echo "Installing Office"
 sudo dnf -y install evince
 sudo dnf -y install libreoffice
 sudo dnf -y install thunderbird
+
+echo "Installing Shell"
+
+sudo dnf install zsh
+wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+chsh -s $(which zsh)
 
 echo "Installing System"
 
